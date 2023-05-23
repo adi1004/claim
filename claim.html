@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    
+
+</head>
+<body>
+    <a href="index.html">1.Home</a><br/>
+    <a href="profile.html">2.Profile Creation</a> <br/>
+    <a href="claim.html">3.Create Claim </a><br/>
+    4.Retreive Claim<br/>
+    5.Logout<br/><br/><br/>
+
+
+    <H1>CREATE CLAIMS</H1>
+    <div class="claims">
+        <form class="claims" method="get" autocomplete="on">
+
+            <label for="policynum">Policy Number:</label>
+            <input type="text" name="policynum" id="policynum" placeholder="13/VA/xxxxx/xx" pattern="13/VA/[0-9]{5}/[0-9]{2}" required><br/>
+
+            <label for="FirstName">First Name:</label>
+            <input type="text" name="fname" id="fname" required><br/>
+
+            <label for="LastName">Last Name:</label>
+            <input type="text" name="lname" id="lname" required><br/>
+
+            <label for="Car">Select Car:</label>
+            <select name="Car" id="carSelect" required>
+            </select><br>
+               
+            <label for="policereportnum">Police Report Number:</label>
+            <input type="text" name="policereportnum" id="policereportnum" placeholder="9-13 digit number" pattern="[0-9]{9,13}" required><br/>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+   </div>
+
+   <script src="bundle.js"></script>
+
+
+</body>
+</html>
